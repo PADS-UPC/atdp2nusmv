@@ -40,7 +40,7 @@ Where:
   specification examples in the `./examples` directory.
 - **`query`**: Is an LTL query in prefix notation using lists. LTL operators are
   preceded by a colon (`:`) and activity ids must be enclosed in double quotes
-  (`""`). For example `[:G [:-> a [:U b c]]]` can be translated as `"G (a -> (b U c))"`. 
+  (`""`). For example `[:G [:-> "a" [:U "b" "c"]]]` can be translated as `"G (a -> (b U c))"`. 
   Any Activity fragment in the ATDP can be used as an activity id in
   the query. Additionally, you can prefix a scope id with `"START_"` and
   `"END_"` to refer to its implicit start and end activities.

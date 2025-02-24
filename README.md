@@ -2,7 +2,7 @@
 
 The ATDP-Reasoner is a tool built to convert ATDP specifications into model
 specifications that can be tested with the NuSMV model checker
-http://nusmv.fbk.eu/.
+http://nusmv.fbk.eu/. 
 
 
 ## Installation
@@ -48,6 +48,10 @@ Where:
   the start of the topmost-level scope (in the examples, `"START_P0"`).
 - **`out`**: The path and filename where the nusmv model should be generated.
 
+Please note that this software only deals with single
+interpretations (that is, atdp specifications are completely unambiguous). 
+To reason on multiple ambiguous interpretations please store them as separate
+specifications and run this software multiple times accordingly.
 
 ## Examples
 
